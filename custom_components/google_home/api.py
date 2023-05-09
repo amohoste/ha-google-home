@@ -87,7 +87,7 @@ class GlocaltokensApiClient:
                 return self._client.get_google_devices(
                     zeroconf_instance=self.zeroconf_instance,
                     force_homegraph_reload=True,
-                    addresses={"alarm": "10.94.78.129"},
+                    addresses={"Bedroom speaker": "10.94.78.129"},
                 )
 
             google_devices = await self.hass.async_add_executor_job(_get_google_devices)
